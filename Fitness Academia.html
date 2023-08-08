@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Academia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', cursive;
+        }
+        body{
+            background: url('https://wallpaperaccess.com/full/3507948.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .left{
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            left: 50px;
+        }
+        .mid{
+            /* border: 2px solid aqua; */
+            width: 33%;
+            margin: 15px auto;
+        }
+        .right{
+            /* border: 2px solid gold; */
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+        }
+        .navbar li{
+            display: inline-block;
+            list-style: none;
+            margin: 5px 15px;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: azure;
+            text-decoration: none;
+        }
+        .navbar li a:hover, .navbar li a.active, .btn:hover{
+            color: gold;
+        }
+       
+        .left img{
+            width: 120px;
+        }
+        .btn{
+            background-color: black; 
+            cursor: pointer;
+            color: azure;
+            padding: 5px;
+            margin: 0 5px;
+            border-radius: 10px;
+            border: 2px solid azure;
+            font-size: 20px;
+        }
+        .btn:hover{
+            background-color: darkgrey;
+        }
+        .container h3{
+            text-align: center;
+            font-size: xx-large;
+            color: gold;
+            font-weight: bold;
+            margin: 15px;
+        }
+        .container{
+            border: 2px solid azure;
+            width: 33%;
+            margin: 105px auto;
+            color: azure;
+            padding: 50px;
+            border-radius: 15px;
+        }
+        .formgroup{
+            margin: 30px;
+        }
+        .container .btn{
+            display: block;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .formgroup input{
+            display: block;
+            width: 100%;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid azure;
+            text-align: center;
+            font-size: 20px;
+        }
+        ::placeholder{
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="https://i.pinimg.com/736x/5c/ca/20/5cca20e59c18edadb7b218f0c7696223.jpg" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h3>Go Beyond | Plus Ultra!</h3>
+            <form method="post">
+                <div class="formgroup"><input type="text" placeholder="Your Name"></div>
+                <div class="formgroup"><input type="text" placeholder="Your Phone Number"></div>
+                <div class="formgroup"><input type="text" placeholder="Your Email"></div>
+                <div class="formgroup"><input type="text" placeholder="Your Address"></div>
+                <button class="btn">Submit</button>
+            </form>
+
+        </div>
+    </header>
+</body>
+</html>
